@@ -1,0 +1,16 @@
+name: Hello World compsite 
+on:
+  push:
+    branches: [ main ]
+    paths: [ hello-world-composite-action/** ]
+  workflow_dispatch:
+
+jobs:
+  Hello-World_compsite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - id: foo
+        uses: rob-bankers/my-first-action@0f532a0aada22c9fd38d392f9abefc448104289e
+        with:
+          who-to-greet: 'Bankers'
