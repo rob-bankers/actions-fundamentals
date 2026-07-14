@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - id: foo
-        uses: rob-bankers/my-first-action@67335c9ec374c7897dff0b0c8111168c34afcd21
+        uses: rob-bankers/my-first-action@02fe4862eadf784742bd64a63c8f04000feab895
         with:
           who-to-greet: 'Bankers'
